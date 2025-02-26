@@ -6,11 +6,23 @@
 <body>
 <form action="#" method="post">
 	<p>アニメ名1：<br>
-	<input type="text" name="animemei1" size="15"></p>
+	<input type="text" name="animemei1_in" size="25"></p>
     <p><input type="button" value="検索" id="button1"></p>
     <p>アニメ名2：<br>
-	<input type="text" name="animemei2" size="15"></p>
+	<input type="text" name="animemei2_in" size="25"></p>
 	<p><input type="button" value="検索" id="button2"></p>
 </form>
 </body>
 </html>
+
+#anime == [全てのアニメ名のリスト]
+#animemei1_in , animemei2_in == テキストボックスに入力された値
+#animemei1_out , animemei2_out == [リストボックスに表示する値のリスト]
+#animemei1_kyotu , animemei2_kyotu ==[anime,animemei1_in(animemei2_in)に共通する値]
+#animemei1_kyotu_in , animemei2_kyotu_in == リストボックスから選ばれた確定したアニメ名
+
+anime = ["ヒプノシスマイク -Division Rap Battle- Rhyme Anima","ドラえもん"]
+animemei1_kyotu = [animemei1_out for animemei1_out in anime if animemei1_in in animemei1_out]
+animemei2_kyotu = [animemei2_out for animemei2_out in anime if animemei2_in in animemei2_out]
+print(animemei1_kyotu)
+print(animemei2_kyotu_in)
