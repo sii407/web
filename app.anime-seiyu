@@ -1,0 +1,16 @@
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>app.anime-seiyu</title>
+</head>
+<body>
+<form action="#" method="post">
+	<p>アニメ名1：<br>
+	<input type="text" name="animemei1" size="15"></p>
+    <p><input type="button" value="" id="button1"></p>
+    <p>アニメ名2：<br>
+	<input type="text" name="animemei2" size="15"></p>
+	<p><input type="button" value="" id="button2"></p>
+</form>
+</body>
+</html>
